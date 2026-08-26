@@ -29,6 +29,10 @@
       "mode": "subagent",
       "model": "{env:EDITOR_MODEL}"
     },
+    "image-editor": {
+      "mode": "subagent",
+      "model": "{env:EDITOR_MODEL}"
+    },
     "researcher": {
       "mode": "subagent"
     },
@@ -60,6 +64,13 @@
       "options": {
         "baseURL": "{env:ANTHROPIC_BASE_URL}",
         "apiKey": "{env:ANTHROPIC_API_KEY}"
+      }
+    },
+    "deepseek": {
+      "npm": "@ai-sdk/deepseek",
+      "options": {
+        "baseURL": "{env:DEEPSEEK_BASE_URL}",
+        "apiKey": "{env:DEEPSEEK_API_KEY}"
       }
     }
   }
